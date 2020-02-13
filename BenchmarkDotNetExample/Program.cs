@@ -24,9 +24,11 @@ namespace BenchmarkDotNetExample
 {
     class Program
     {
-        static async Task Main(string[] args)
+        static void Main(string[] args)
         {
-            var summery = BenchmarkRunner.Run(typeof(Test<TestModel>).Assembly);
+            // Press Ctrl + F5 to run by release configuration without VS debug
+
+            var summery = BenchmarkRunner.Run<Test<TestModel>>();
 
             Console.ReadKey();
         }
