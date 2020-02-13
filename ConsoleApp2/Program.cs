@@ -91,7 +91,7 @@ namespace ConsoleApp2
         }
 
         [Benchmark]
-        public void GetType() 
+        public new void GetType() 
         {
             var r = typeof(T);
         }
