@@ -27,8 +27,7 @@ namespace BenchmarkDotNetExample
         static void Main(string[] args)
         {
             // Press Ctrl + F5 to run by release configuration without VS debug
-
-            var summery = BenchmarkRunner.Run<Test<TestModel>>();
+            var summery = BenchmarkRunner.Run<SqlConnectionTest>();
 
             Console.ReadKey();
         }
